@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andretti Silva - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0f172a; color: #f1f5f9; line-height: 1.6; }
+    a { color: #38bdf8; text-decoration: none; transition: 0.3s; }
+
+    header {
+      background: linear-gradient(90deg,#1e293b,#0f172a);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+    header p { font-size: 1.3rem; color: #94a3b8; }
+
+    nav { margin-top: 20px; }
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .menu li a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #007BFF, #0056b3);
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4),
+                  -2px -2px 6px rgba(255, 255, 255, 0.2);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .menu li a:hover {
+      background: linear-gradient(145deg, #0056b3, #004094);
+      transform: translateY(-3px);
+      box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5),
+                  -3px -3px 8px rgba(255, 255, 255, 0.25);
+    }
+
+    .menu li a:active {
+      transform: translateY(2px);
+      box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+                  inset -2px -2px 6px rgba(255, 255, 255, 0.2);
+    }
+
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+    h2 { color: #38bdf8; font-size: 2rem; margin-bottom: 25px; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 5px; }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+    }
+    .card h3 { color: #38bdf8; margin-bottom: 10px; }
+    .card ul { margin-left: 20px; margin-top: 10px; }
+
+    footer { background: #1e293b; text-align: center; padding: 20px; font-size: 0.9rem; color: #94a3b8; margin-top: 40px; }
+
+    /* Botões de contato */
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #0ea5e9; color: #ffffff; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Andretti Silva</h1>
+    <p>Analista de Segurança da Informação | Blue Team | Proteção de Dados</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Profissional de segurança da informação com experiência em Blue Team, proteção de dados e monitoramento de ambientes críticos. Atuo na implementação de soluções para prevenção, detecção e resposta a incidentes de segurança, com foco em visibilidade, resiliência e mitigação de riscos.</p>
+  </section>
+
+  <section id="tecnologias">
+    <h2>Tecnologias</h2>
+    <div class="card"><h3>SIEM</h3><p>Google SecOps</p></div>
+    <div class="card"><h3>EDR</h3><p>Sophos, Crowdstrike</p></div>
+    <div class="card"><h3>WAF</h3><p>Cloudflare, Cloud Armor</p></div>
+    <div class="card"><h3>Threat Hunting</h3><p>BTT Apura</p></div>
+    <div class="card"><h3>Cloud</h3><p>Google Cloud Platform (GCP)</p></div>
+    <div class="card"><h3>CSPM</h3><p>Command Center</p></div>
+    <div class="card"><h3>DLP</h3><p>Netskope, Endpoint Protector</p></div>
+    <div class="card"><h3>Sistemas Operacionais</h3><p>Windows, Linux e Mac OS</p></div>
+    <div class="card"><h3>Gestão de Identidade</h3><p>Jumpcloud, Active Directory</p></div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+   <div class="card">
+      <h3>Jeitto</h3>
+      <p><strong>Cargo:</strong> Analista de Segurança da Informação - Blue Team</p>
+      <p>Envolvimento em monitoramento de incidentes, defesa cibernética e uso de ferramentas SIEM, EDR e DLP para proteção do ambiente.</p>
+    </div>
+
+    <div class="card">
+      <h3>Catupiry</h3>
+      <p><strong>Cargo:</strong> Analista de Segurança da Informação</p>
+      <p>Responsável pela análise de vulnerabilidades, gestão de riscos e suporte às iniciativas de conformidade.</p>
+    </div>
+    <div class="card">
+      <h3>Idwall</h3>
+      <p><strong>Cargo:</strong> Analista de Segurança da Informação - InfraSec</p>
+      <p>Atuação em segurança de infraestrutura, monitoramento e implementação de medidas para proteção de dados e serviços.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos Relevantes</h2>
+
+     <div class="card">
+      <h3>Migração do WAF Google Cloud Armor para Cloudflare WAF</h3>
+      <p><strong>Contexto:</strong> Migração para o WAF da Cloudflare para ampliar cobertura de segurança, simplificar gestão de regras e obter proteção avançada.</p>
+      <p><strong>Atividades realizadas:</strong></p>
+      <ul>
+        <li>Levantamento das necessidades e políticas existentes.</li>
+        <li>Testes de performance, segurança e compatibilidade.</li>
+        <li>Definição de estratégia de migração com mínima indisponibilidade.</li>
+        <li>Implementação de regras avançadas (OWASP Top 10, SQLi, XSS, LFI/RFI).</li>
+        <li>Configuração de Bot Management e mitigação DDoS nativa.</li>
+        <li>Monitoramento pós-go live e ajustes finos.</li>
+      </ul>
+      <p><strong>Benefícios alcançados:</strong></p>
+      <ul>
+        <li>Cobertura de segurança global mais robusta.</li>
+        <li>Proteção contra DDoS em larga escala sem intervenção manual.</li>
+        <li>Gestão centralizada e dashboards para automação.</li>
+        <li>Redução do tempo de resposta a incidentes.</li>
+        <li>Centralização de registros e certificados.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Implementação de SIEM e SOC com Google SecOps</h3>
+      <p><strong>Contexto:</strong> Implantação de SIEM e estruturação do SOC para monitoramento de incidentes e resposta a ameaças, integrando com Google Cloud.</p>
+      <p><strong>Atividades realizadas:</strong></p>
+      <ul>
+        <li>Definição da arquitetura do SIEM e integração com logs críticos.</li>
+        <li>Configuração e normalização de eventos para correlação eficiente.</li>
+        <li>Implementação de regras de detecção para cenários de ameaças.</li>
+        <li>Criação de dashboards para monitoramento em tempo real.</li>
+        <li>Definição de processos de SOC e playbooks de resposta.</li>
+        <li>Treinamento e alinhamento da equipe interna.</li>
+        <li>Ajuste de alertas junto ao time terceirizado.</li>
+      </ul>
+      <p><strong>Benefícios alcançados:</strong></p>
+      <ul>
+        <li>Maior visibilidade e monitoramento centralizado.</li>
+        <li>Redução do tempo de detecção e resposta.</li>
+        <li>Integração nativa com Google Cloud e redução de custos.</li>
+        <li>SOC terceirizado garantindo operação confiável.</li>
+        <li>Processos internos aprimorados e governança de segurança.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Implementação de DLP com Netskope</h3>
+      <p><strong>Contexto:</strong> Proteção de dados sensíveis centralizada para 350 funcionários com monitoramento e prevenção de vazamento via Netskope.</p>
+      <p><strong>Atividades realizadas:</strong></p>
+      <ul>
+        <li>Mapeamento de dados sensíveis e definição de políticas.</li>
+        <li>Criação de políticas de DLP customizadas para dados críticos.</li>
+        <li>Implementação de alertas e relatórios de auditoria.</li>
+        <li>Testes de eficácia e ajustes finos para reduzir falsos positivos.</li>
+      </ul>
+      <p><strong>Benefícios alcançados:</strong></p>
+      <ul>
+        <li>Proteção centralizada de dados sensíveis.</li>
+        <li>Melhoria da governança e auditoria de dados.</li>
+        <li>Compliance reforçado e alinhamento regulatório.</li>
+        <li>Monitoramento proativo e resposta a incidentes.</li>
+        <li>Conscientização da equipe interna sobre segurança da informação.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Implementação de Patch Management com JumpCloud</h3>
+      <p><strong>Contexto:</strong> Centralização do patching de dispositivos Windows e macOS para reduzir vulnerabilidades e aumentar segurança corporativa.</p>
+      <p><strong>Atividades realizadas:</strong></p>
+      <ul>
+        <li>Avaliação do parque de dispositivos e definição de prioridades.</li>
+        <li>Configuração do JumpCloud para distribuição centralizada.</li>
+        <li>Criação de políticas automáticas de patching e monitoramento.</li>
+        <li>Integração com Field Service para reduzir impactos.</li>
+        <li>Testes piloto e ajustes finos.</li>
+        <li>Treinamento da equipe interna.</li>
+      </ul>
+      <p><strong>Benefícios alcançados:</strong></p>
+      <ul>
+        <li>Redução de vulnerabilidades e maior postura de segurança.</li>
+        <li>Centralização e automação do patching.</li>
+        <li>Melhoria na conformidade e auditoria de dispositivos.</li>
+        <li>Menor impacto operacional e continuidade da produtividade.</li>
+        <li>Maior visibilidade e controle do parque misto de dispositivos.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Criação de Políticas e Processos de Segurança</h3>
+      <p><strong>Contexto:</strong> Estruturação da governança de segurança, criação de políticas corporativas e definição de processos para proteção de dados e compliance.</p>
+      <p><strong>Atividades realizadas:</strong></p>
+      <ul>
+        <li>Desenvolvimento de políticas de controle de acesso e uso aceitável.</li>
+        <li>Definição de políticas de segurança em endpoints e hardening.</li>
+        <li>Estruturação de processos de treinamento e conscientização.</li>
+        <li>Criação de fluxos de resposta a incidentes integrados ao SOC.</li>
+        <li>Apoio na implantação e comunicação das políticas.</li>
+      </ul>
+      <p><strong>Benefícios alcançados:</strong></p>
+      <ul>
+        <li>Governança estruturada com processos documentados.</li>
+        <li>Redução de riscos humanos via conscientização.</li>
+        <li>Padronização e conformidade para auditorias.</li>
+        <li>Integração entre políticas e controles técnicos.</li>
+        <li>Maior maturidade em segurança da informação.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a class="btn" href="mailto:seuemail@dominio.com">andretti.junio@outlook.com</a></p>
+    <p>LinkedIn: <a class="btn" href="https://www.linkedin.com/in/andretti-j-silva" target="_blank">https://www.linkedin.com/in/andretti-j-silva/</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Andretti Silva. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
